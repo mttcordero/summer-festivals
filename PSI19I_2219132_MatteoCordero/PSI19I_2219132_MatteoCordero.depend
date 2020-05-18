@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1589821319 source:c:\users\mttco\onedrive\documentos\github\psi19i_2219132_matteocordero\psi19i_2219132_matteocordero\main.c
+	<stdio.h>
+	<stdlib.h>
+	<Windows.h>
+	<conio.h>
+	<locale.h>
+
