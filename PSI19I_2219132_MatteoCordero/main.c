@@ -55,6 +55,21 @@ int main()
     nosalive[4]=nosalive[0]*c;
     nosalive[5]=nosalive[2]*c;
 
+    int rockinrio[5];
+    rockinrio[0]=40;
+    rockinrio[1]=46;
+    rockinrio[2]=38;
+    rockinrio[3]=rockinrio[1]*c;
+    rockinrio[4]=rockinrio[0]*c;
+    rockinrio[5]=rockinrio[2]*c;
+
+    int rollingloud[5];
+    rollingloud[0]=50;
+    rollingloud[1]=52;
+    rollingloud[2]=45;
+    rollingloud[3]=rollingloud[1]*c;
+    rollingloud[4]=rollingloud[0]*c;
+    rollingloud[5]=rollingloud[2]*c;
 
     printf("festivais de verão\n");
     Sleep(1500);
@@ -486,7 +501,7 @@ int main()
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
                             printf("Bilhete para %s\n",nome);
-                            printf("%i euros\n",crato[4]);
+                            printf("%i euros\n",nosalive[4]);
                             fprintf(ficheiro,"  // bilhete de %s para %i dias //  ",nome,nosalive[4]);break;
                         }
 
@@ -509,6 +524,168 @@ int main()
                 {
                     printf("Até a proxima\n");break;
                 }
+
+        case 6: printf("Rock In Rio\n");
+                Sleep(1500);
+                system("cls");
+                printf("Rock In Rio 2020\n\n");
+                printf("O Rock in Rio é um festival de música realizado pela primeira vez em 1985\n");
+                printf("sendo, desde sua criação, reconhecido como o maior festival musical do planeta.\n");
+                printf("Foi originalmente organizado no Rio de Janeiro ma shoje em dia ja teve \n");
+                printf("20 edições, oito no Brasil, oito em Portugal, três na Espanha e uma nos Estados Unidos.\n\n");
+                printf("localização:\n");
+                system("pause");
+                system("cls");
+                printf("pretende adquirir bilhete?\n");
+                printf("selecione\n1-sim\n2-nao\n");
+                scanf("%i",&b);
+                fflush(stdin);
+                system("cls");
+                if(b==1)
+                {
+                    printf("bilhete para quantos dias? max.8\n");
+                    scanf("%i",&c);
+                    fflush(stdin);
+                    system("cls");
+                    printf("bilhete para %i dias\n",c);
+                    printf("digite a sua idade\n");
+                    scanf("%i",&d);
+                    fflush(stdin);
+                    system("cls");
+                    if(d>=18)
+                    {
+                        printf("bebidas incluidas\n1-sim\n2-nao\n");
+                        scanf("%i",&e);
+                        fflush(stdin);
+                        system("cls");
+                        if(e==1)
+                        {
+                            rockinrio[3]=rockinrio[1]*c;
+                            printf("|----------------|\n");
+                            printf("|--- BILHETE ----|\n");
+                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Festival ---|\n");
+                            printf("|----- 2020 -----|\n");
+                            printf("|----------------|\n\n\n");
+                            printf("Bilhete para %s\n",nome);
+                            printf("%i euros\n",rockinrio[3]);
+                            fprintf(ficheiro,"  // bilhete de %s para %i dias //  ",nome,rockinrio[3]);break;
+                        }
+                        else
+                        {
+                            rockinrio[4]=rockinrio[0]*c;
+                            printf("|----------------|\n");
+                            printf("|--- BILHETE ----|\n");
+                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Festival ---|\n");
+                            printf("|----- 2020 -----|\n");
+                            printf("|----------------|\n\n\n");
+                            printf("Bilhete para %s\n",nome);
+                            printf("%i euros\n",rockinrio[4]);
+                            fprintf(ficheiro,"  // bilhete de %s para %i dias //  ",nome,rockinrio[4]);break;
+                        }
+
+                     }
+                     else
+                     {
+                            rockinrio[5]=rockinrio[2]*c;
+                            printf("|----------------|\n");
+                            printf("|--- BILHETE ----|\n");
+                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Festival ---|\n");
+                            printf("|----- < 18 -----|\n");
+                            printf("|----------------|\n\n\n");
+                            printf("Bilhete para %s\n",nome);
+                            printf("%i euros\n",rockinrio[5]);
+                            fprintf(ficheiro,"  // bilhete de %s para %i dias //  ",nome,rockinrio[5]);break;
+                     }
+                }
+                else
+                {
+                    printf("Até a proxima\n");break;
+                }
+
+        case 7: printf("Rolling Loud\n");
+                Sleep(1500);
+                system("cls");
+                printf("Rolling Loud 2020\n\n");
+                printf("O Rolling Loud Festival é um evento de música de 3 dias que começou em Miami\n");
+                printf("e agora é considerado o maior festival de Hip-Hop do mundo.\n");
+                printf("Este festival para alem de ter planos de se expandir internacionalmente para o Japão e\n");
+                printf("China este ano chegou a Europa mais especificamente a Portugal.\n\n");
+                printf("localização: Portimão\n");
+                system("pause");
+                system("cls");
+                printf("pretende adquirir bilhete?\n");
+                printf("selecione\n1-sim\n2-nao\n");
+                scanf("%i",&b);
+                fflush(stdin);
+                system("cls");
+                if(b==1)
+                {
+                    printf("bilhete para quantos dias? max.8\n");
+                    scanf("%i",&c);
+                    fflush(stdin);
+                    system("cls");
+                    printf("bilhete para %i dias\n",c);
+                    printf("digite a sua idade\n");
+                    scanf("%i",&d);
+                    fflush(stdin);
+                    system("cls");
+                    if(d>=18)
+                    {
+                        printf("bebidas incluidas\n1-sim\n2-nao\n");
+                        scanf("%i",&e);
+                        fflush(stdin);
+                        system("cls");
+                        if(e==1)
+                        {
+                            rollingloud[3]=rollingloud[1]*c;
+                            printf("|----------------|\n");
+                            printf("|--- BILHETE ----|\n");
+                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Festival ---|\n");
+                            printf("|----- 2020 -----|\n");
+                            printf("|----------------|\n\n\n");
+                            printf("Bilhete para %s\n",nome);
+                            printf("%i euros\n",rollingloud[3]);
+                            fprintf(ficheiro,"  // bilhete de %s para %i dias //  ",nome,rollingloud[3]);break;
+                        }
+                        else
+                        {
+                            rollingloud[4]=rollingloud[0]*c;
+                            printf("|----------------|\n");
+                            printf("|--- BILHETE ----|\n");
+                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Festival ---|\n");
+                            printf("|----- 2020 -----|\n");
+                            printf("|----------------|\n\n\n");
+                            printf("Bilhete para %s\n",nome);
+                            printf("%i euros\n",rollingloud[4]);
+                            fprintf(ficheiro,"  // bilhete de %s para %i dias //  ",nome,rollingloud[4]);break;
+                        }
+
+                     }
+                     else
+                     {
+                            rollingloud[5]=rollingloud[2]*c;
+                            printf("|----------------|\n");
+                            printf("|--- BILHETE ----|\n");
+                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Festival ---|\n");
+                            printf("|----- < 18 -----|\n");
+                            printf("|----------------|\n\n\n");
+                            printf("Bilhete para %s\n",nome);
+                            printf("%i euros\n",rollingloud[5]);
+                            fprintf(ficheiro,"  // bilhete de %s para %i dias //  ",nome,rollingloud[5]);break;
+                     }
+                }
+                else
+                {
+                    printf("Até a proxima\n");break;
+                }
+
+
 
 
 
