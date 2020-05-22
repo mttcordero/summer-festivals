@@ -4,6 +4,7 @@
 #include <conio.h>
 #include <locale.h>
 
+//cartaz
 // acampar
 // mudar o max de dias dos festivais
 
@@ -71,10 +72,56 @@ int main()
     rollingloud[4]=rollingloud[0]*c;
     rollingloud[5]=rollingloud[2]*c;
 
-    printf("festivais de verão\n");
-    Sleep(1500);
+    int sumol[5];
+    sumol[0]=50;
+    sumol[1]=52;
+    sumol[2]=45;
+    sumol[3]=sumol[1]*c;
+    sumol[4]=sumol[0]*c;
+    sumol[5]=sumol[2]*c;
+
+    int superbock[5];
+    superbock[0]=50;
+    superbock[1]=52;
+    superbock[2]=45;
+    superbock[3]=superbock[1]*c;
+    superbock[4]=superbock[0]*c;
+    superbock[5]=superbock[2]*c;
+
+     int primaverasound[5];
+    primaverasound[0]=50;
+    primaverasound[1]=52;
+    primaverasound[2]=45;
+    primaverasound[3]=primaverasound[1]*c;
+    primaverasound[4]=primaverasound[0]*c;
+    primaverasound[5]=primaverasound[2]*c;
+
+    printf(":::::::::: ::::::::::  ::::::::  ::::::::::: ::::::::::: :::     :::     :::     :::::::::::  ::::::::\n");
+    printf(":+:        :+:        :+:    :+:     :+:         :+:     :+:     :+:   :+: :+:       :+:     :+:    :+:\n");
+    printf("+:+        +:+        +:+            +:+         +:+     +:+     +:+  +:+   +:+      +:+     +:+\n");
+    printf(":#::+::#   +#++:++#   +#++:++#++     +#+         +#+     +#+     +:+ +#++:++#++:     +#+     +#++:++#++\n");
+    printf("+#+        +#+               +#+     +#+         +#+      +#+   +#+  +#+     +#+     +#+            +#+\n");
+    printf("#+#        #+#        #+#    #+#     #+#         #+#       #+#+#+#   #+#     #+#     #+#     #+#    #+#\n");
+    printf("###        ##########  ########      ###     ###########     ###     ###     ### ###########  ########\n\n\n");
+    printf(":::::::::  ::::::::::\n");
+    printf(":+:    :+: :+:\n");
+    printf("+:+    +:+ +:+\n");
+    printf("+#+    +:+ +#++:++#\n");
+    printf("+#+    +#+ +#+\n");
+    printf("#+#    #+# #+#\n");
+    printf("#########  ##########\n\n\n");
+    printf(":::     ::: :::::::::: :::::::::      :::      ::::::::\n");
+    printf(":+:     :+: :+:        :+:    :+:   :+: :+:   :+:    :+:\n");
+    printf("+:+     +:+ +:+        +:+    +:+  +:+   +:+  +:+    +:+\n");
+    printf("+#+     +:+ +#++:++#   +#++:++#:  +#++:++#++: +#+    +:+\n");
+    printf(" +#+   +#+  +#+        +#+    +#+ +#+     +#+ +#+    +#+\n");
+    printf("  #+#+#+#   #+#        #+#    #+# #+#     #+# #+#    #+#\n");
+    printf("    ###     ########## ###    ### ###     ###  ########\n\n\n");
+
+
+    system("pause");
     system("cls");
-    printf("digite o seu primeiro nome\n");
+    printf("Digite o seu primeiro nome\n");
     gets(nome);
     fflush(stdin);
     system("cls");
@@ -106,28 +153,41 @@ int main()
                printf("Boom Festival é um festival bienal realizado em Portugal durante a lua cheia de Agosto.\n");
                printf("Iniciou-se em 1997 enquanto evento musical,mas evoluiu ao longo das suas\n");
                printf("edições para uma celebraçã da cultura alternativa.\n\n");
-               printf("localização: Idanha-A-Nova\n");
+               printf("localização: Idanha-A-Nova\n\n");
+               printf("|----------------|   |----------------| \n");
+               printf("|---- Cartaz ----|   |-- Principais --| \n");
+               printf("|----- Boom -----|   |----------------| \n");
+               printf("|--- Festival ---|   |--- Artistas ---| \n");
+               printf("|----- 2020 -----|   |----------------| \n");
+               printf("|----------------|   |----------------| \n\n\n");
+
+               printf("|----------------|   |----------------| \n");
+               printf("|---- Cartaz ----|   |-- Principais --| \n");
+               printf("|----- Boom -----|   |----------------| \n");
+               printf("|--- Festival ---|   |--- Artistas ---| \n");
+               printf("|----- 2020 -----|   |----------------| \n");
+               printf("|----------------|   |----------------| \n\n\n");
                system("pause");
                system("cls");
-               printf("pretende adquirir bilhete?\n");
-               printf("selecione\n1-sim\n2-nao\n");
+               printf("pretende adquirir bilhete?\n\n");
+               printf("selecione\n\n1-sim\n2-nao\n\n");
                scanf("%i",&b);
                fflush(stdin);
                system("cls");
                if(b==1)
                   {
-                    printf("bilhete para quantos dias? max.8\n");
+                    printf("bilhete para quantos dias? max.8\n\n");
                     scanf("%i",&c);
                     fflush(stdin);
                     system("cls");
                     printf("bilhete para %i dias\n",c);
-                    printf("digite a sua idade\n");
+                    printf("digite a sua idade\n\n");
                     scanf("%i",&d);
                     fflush(stdin);
                     system("cls");
                     if(d>=18)
                     {
-                        printf("bebidas incluidas\n1-sim\n2-nao\n");
+                        printf("bebidas incluidas\n1-sim\n2-nao\n\n");
                         scanf("%i",&e);
                         fflush(stdin);
                         system("cls");
@@ -686,10 +746,242 @@ int main()
                 }
 
 
+        case 8: printf("Summol Summer Fest\n");
+                Sleep(1500);
+                system("cls");
+                printf("Summol Summer Fest 2020\n\n");
+                printf("O Sumol Summer Fest nasceu em 2009 e é um festival de Hip-Hop Portugues\n");
+                printf("Este festival é sempre sinónimo de celebração\n");
+                printf("com a  praia, o calor, os amigos e de muita música.\n\n");
+                printf("localização: Ericeira\n");
+                system("pause");
+                system("cls");
+                printf("pretende adquirir bilhete?\n");
+                printf("selecione\n1-sim\n2-nao\n");
+                scanf("%i",&b);
+                fflush(stdin);
+                system("cls");
+                if(b==1)
+                {
+                    printf("bilhete para quantos dias? max.8\n");
+                    scanf("%i",&c);
+                    fflush(stdin);
+                    system("cls");
+                    printf("bilhete para %i dias\n",c);
+                    printf("digite a sua idade\n");
+                    scanf("%i",&d);
+                    fflush(stdin);
+                    system("cls");
+                    if(d>=18)
+                    {
+                        printf("bebidas incluidas\n1-sim\n2-nao\n");
+                        scanf("%i",&e);
+                        fflush(stdin);
+                        system("cls");
+                        if(e==1)
+                        {
+                            sumol[3]=sumol[1]*c;
+                            printf("|----------------|\n");
+                            printf("|--- BILHETE ----|\n");
+                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Festival ---|\n");
+                            printf("|----- 2020 -----|\n");
+                            printf("|----------------|\n\n\n");
+                            printf("Bilhete para %s\n",nome);
+                            printf("%i euros\n",sumol[3]);
+                            fprintf(ficheiro,"  // bilhete de %s para %i dias //  ",nome,sumol[3]);break;
+                        }
+                        else
+                        {
+                            sumol[4]=sumol[0]*c;
+                            printf("|----------------|\n");
+                            printf("|--- BILHETE ----|\n");
+                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Festival ---|\n");
+                            printf("|----- 2020 -----|\n");
+                            printf("|----------------|\n\n\n");
+                            printf("Bilhete para %s\n",nome);
+                            printf("%i euros\n",sumol[4]);
+                            fprintf(ficheiro,"  // bilhete de %s para %i dias //  ",nome,sumol[4]);break;
+                        }
 
+                     }
+                     else
+                     {
+                            sumol[5]=sumol[2]*c;
+                            printf("|----------------|\n");
+                            printf("|--- BILHETE ----|\n");
+                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Festival ---|\n");
+                            printf("|----- < 18 -----|\n");
+                            printf("|----------------|\n\n\n");
+                            printf("Bilhete para %s\n",nome);
+                            printf("%i euros\n",sumol[5]);
+                            fprintf(ficheiro,"  // bilhete de %s para %i dias //  ",nome,sumol[5]);break;
+                     }
+                }
+                else
+                {
+                    printf("Até a proxima\n");break;
+                }
 
+        case 9: printf("Super Bock Super Rock\n");
+                Sleep(1500);
+                system("cls");
+                printf("Super Bock Super Rock 2020\n\n");
+                printf("O Super Bock Super Rock é um festival de música de Verão\n");
+                printf("realizado anualmente em Portugal. É organizado desde 1995 e é\n");
+                printf("actualmente, um dos mais importantes festivais portugueses.\n\n");
+                printf("localização: Meco\n");
+                system("pause");
+                system("cls");
+                printf("pretende adquirir bilhete?\n");
+                printf("selecione\n1-sim\n2-nao\n");
+                scanf("%i",&b);
+                fflush(stdin);
+                system("cls");
+                if(b==1)
+                {
+                    printf("bilhete para quantos dias? max.8\n");
+                    scanf("%i",&c);
+                    fflush(stdin);
+                    system("cls");
+                    printf("bilhete para %i dias\n",c);
+                    printf("digite a sua idade\n");
+                    scanf("%i",&d);
+                    fflush(stdin);
+                    system("cls");
+                    if(d>=18)
+                    {
+                        printf("bebidas incluidas\n1-sim\n2-nao\n");
+                        scanf("%i",&e);
+                        fflush(stdin);
+                        system("cls");
+                        if(e==1)
+                        {
+                            superbock[3]=superbock[1]*c;
+                            printf("|----------------|\n");
+                            printf("|--- BILHETE ----|\n");
+                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Festival ---|\n");
+                            printf("|----- 2020 -----|\n");
+                            printf("|----------------|\n\n\n");
+                            printf("Bilhete para %s\n",nome);
+                            printf("%i euros\n",superbock[3]);
+                            fprintf(ficheiro,"  // bilhete de %s para %i dias //  ",nome,superbock[3]);break;
+                        }
+                        else
+                        {
+                            superbock[4]=superbock[0]*c;
+                            printf("|----------------|\n");
+                            printf("|--- BILHETE ----|\n");
+                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Festival ---|\n");
+                            printf("|----- 2020 -----|\n");
+                            printf("|----------------|\n\n\n");
+                            printf("Bilhete para %s\n",nome);
+                            printf("%i euros\n",superbock[4]);
+                            fprintf(ficheiro,"  // bilhete de %s para %i dias //  ",nome,superbock[4]);break;
+                        }
 
+                     }
+                     else
+                     {
+                            superbock[5]=superbock[2]*c;
+                            printf("|----------------|\n");
+                            printf("|--- BILHETE ----|\n");
+                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Festival ---|\n");
+                            printf("|----- < 18 -----|\n");
+                            printf("|----------------|\n\n\n");
+                            printf("Bilhete para %s\n",nome);
+                            printf("%i euros\n",superbock[5]);
+                            fprintf(ficheiro,"  // bilhete de %s para %i dias //  ",nome,superbock[5]);break;
+                     }
+                }
+                else
+                {
+                    printf("Até a proxima\n");break;
+                }
 
+       case 10: printf("\n");
+                Sleep(1500);
+                system("cls");
+                printf(" 2020\n\n");
+                printf("A primeira edição do festival em 2012 foi um verdadeiro sucesso\n");
+                printf("e a partir dai o Nos Primavera Sound continuou a crescer \n");
+                printf("destancando-se por investir em novos artistas e bandas.\n \n");
+                printf("localização: Porto\n");
+                system("pause");
+                system("cls");
+                printf("pretende adquirir bilhete?\n");
+                printf("selecione\n1-sim\n2-nao\n");
+                scanf("%i",&b);
+                fflush(stdin);
+                system("cls");
+                if(b==1)
+                {
+                    printf("bilhete para quantos dias? max.8\n");
+                    scanf("%i",&c);
+                    fflush(stdin);
+                    system("cls");
+                    printf("bilhete para %i dias\n",c);
+                    printf("digite a sua idade\n");
+                    scanf("%i",&d);
+                    fflush(stdin);
+                    system("cls");
+                    if(d>=18)
+                    {
+                        printf("bebidas incluidas\n1-sim\n2-nao\n");
+                        scanf("%i",&e);
+                        fflush(stdin);
+                        system("cls");
+                        if(e==1)
+                        {
+                            primaverasound[3]=primaverasound[1]*c;
+                            printf("|----------------|\n");
+                            printf("|--- BILHETE ----|\n");
+                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Festival ---|\n");
+                            printf("|----- 2020 -----|\n");
+                            printf("|----------------|\n\n\n");
+                            printf("Bilhete para %s\n",nome);
+                            printf("%i euros\n",primaverasound[3]);
+                            fprintf(ficheiro,"  // bilhete de %s para %i dias //  ",nome,primaverasound[3]);break;
+                        }
+                        else
+                        {
+                            primaverasound[4]=primaverasound[0]*c;
+                            printf("|----------------|\n");
+                            printf("|--- BILHETE ----|\n");
+                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Festival ---|\n");
+                            printf("|----- 2020 -----|\n");
+                            printf("|----------------|\n\n\n");
+                            printf("Bilhete para %s\n",nome);
+                            printf("%i euros\n",primaverasound[4]);
+                            fprintf(ficheiro,"  // bilhete de %s para %i dias //  ",nome,primaverasound[4]);break;
+                        }
+
+                     }
+                     else
+                     {
+                            primaverasound[5]=primaverasound[2]*c;
+                            printf("|----------------|\n");
+                            printf("|--- BILHETE ----|\n");
+                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Festival ---|\n");
+                            printf("|----- < 18 -----|\n");
+                            printf("|----------------|\n\n\n");
+                            printf("Bilhete para %s\n",nome);
+                            printf("%i euros\n",primaverasound[5]);
+                            fprintf(ficheiro,"  // bilhete de %s para %i dias //  ",nome,primaverasound[5]);break;
+                     }
+                }
+                else
+                {
+                    printf("Até a proxima\n");break;
+                }
 
 
 
