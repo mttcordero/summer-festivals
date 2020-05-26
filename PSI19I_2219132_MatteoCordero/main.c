@@ -11,7 +11,7 @@
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
-    int a,b,c,d,e,bebidas,dias,boom;
+    int a,b,c,d,e;
     char nome[15];
     FILE*ficheiro;
     ficheiro=fopen("bilhete.txt","a+");
@@ -121,7 +121,8 @@ int main()
 
     system("pause");
     system("cls");
-    printf("Digite o seu primeiro nome\n");
+    printf("Menu\n\n");
+    printf("Digite o seu nome\n");
     gets(nome);
     fflush(stdin);
     system("cls");
@@ -188,7 +189,7 @@ int main()
                system("cls");
                if(b==1)
                   {
-                     printf("bilhete para quantos dias? max.8\n\n");
+                    printf("bilhete para quantos dias? max.8\n\n");
                     scanf("%i",&c);
                     fflush(stdin);
                     system("cls");
@@ -198,7 +199,7 @@ int main()
                     system("cls");
                     if(d>=18)
                     {
-                        printf("bebidas incluidas\n\n1-sim\n2-nao\n");
+                        printf("bebidas incluidas\n\n1-sim\n2-nao\n\n");
                         scanf("%i",&e);
                         fflush(stdin);
                         system("cls");
@@ -208,7 +209,7 @@ int main()
                             festboom[3]=festboom[1]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|----- BOOM -----|\n");
+                            printf("|---- Avante ----|\n");
                             printf("|--- Festival ---|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
@@ -224,7 +225,7 @@ int main()
                             festboom[4]=festboom[0]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|----- BOOM -----|\n");
+                            printf("|---- Avante ----|\n");
                             printf("|--- Festival ---|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
@@ -240,7 +241,7 @@ int main()
                             festboom[5]=festboom[2]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|----- BOOM -----|\n");
+                            printf("|---- Avante ----|\n");
                             printf("|--- Festival ---|\n");
                             printf("|----- < 18 -----|\n");
                             printf("|----------------|\n\n\n");
@@ -257,14 +258,33 @@ int main()
                 }
 
 
-        case 2: printf("Avante\n");
-                Sleep(1500);
+        case 2: printf("    :::     :::     :::     :::     ::::    ::: ::::::::::: :::::::::: \n");
+                printf("  :+: :+:   :+:     :+:   :+: :+:   :+:+:   :+:     :+:     :+:        \n");
+                printf(" +:+   +:+  +:+     +:+  +:+   +:+  :+:+:+  +:+     +:+     +:+\n");
+                printf("+#++:++#++: +#+     +:+ +#++:++#++: +#+ +:+ +#+     +#+     +#++:++#\n");
+                printf("+#+     +#+  +#+   +#+  +#+     +#+ +#+  +#+#+#     +#+     +#+\n");
+                printf("#+#     #+#   #+#+#+#   #+#     #+# #+#   #+#+#     #+#     #+#\n");
+                printf("###     ###     ###     ###     ### ###    ####     ###     ##########\n\n\n");
+
+
+
+
+                system("pause");
                 system("cls");
                 printf("Avante 2020\n\n");
                 printf("A Festa do Avante é uma festa política, cultural, desportiva e musical com a duração de 3 dias,\n");
                 printf("realizada pelo Partido Comunista Português.\n");
                 printf("É o maior evento político-cultural realizado em Portugal.\n\n");
                 printf("localização: Seixal\n");
+                printf("|----------------|   |----------------|   |----------------| \n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |---- Avante ----|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n\n\n");
+
+
+
                 system("pause");
                 system("cls");
                 printf("pretende adquirir bilhete?\n\n");
@@ -344,8 +364,18 @@ int main()
                 }
 
 
-        case 3: printf("Crato\n");
-                Sleep(1500);
+        case 3: printf(" ::::::::  :::::::::      :::     :::::::::::  ::::::::\n");
+                printf(":+:    :+: :+:    :+:   :+: :+:       :+:     :+:    :+:\n");
+                printf("+:+        +:+    +:+  +:+   +:+      +:+     +:+    +:+\n");
+                printf("+#+        +#++:++#:  +#++:++#++:     +#+     +#+    +:+\n");
+                printf("+#+        +#+    +#+ +#+     +#+     +#+     +#+    +#+\n");
+                printf("#+#    #+# #+#    #+# #+#     #+#     #+#     #+#    #+#\n");
+                printf(" ########  ###    ### ###     ###     ###      ########  \n\n\n");
+
+
+
+
+                system("pause");
                 system("cls");
                 printf("Crato 2020\n\n");
                 printf("O Festival do Crato é um festival de música anual realizado na vila do Crato,\n");
@@ -353,6 +383,15 @@ int main()
                 printf("Anteriormente denominado por Feira de Artesanato e Gastronomia, as suas principais\n");
                 printf("atracções são a gastronomia e as artes tradicionais do Alto Alentejo e Portugal.\n\n");
                 printf("localização: Portalegre\n");
+                printf("|----------------|   |----------------|   |----------------| \n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |---- Avante ----|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n\n\n");
+
+
+
                 system("pause");
                 system("cls");
                 printf("pretende adquirir bilhete?\n\n");
@@ -447,8 +486,24 @@ int main()
                 }
 
 
-        case 4: printf("Meo Sudoeste\n");
-                Sleep(1500);
+       case 4: printf("::::    ::::  ::::::::::  ::::::::\n");
+               printf("+:+:+: :+:+:+ :+:        :+:    :+:\n");
+               printf("+:+ +:+:+ +:+ +:+        +:+    +:+\n");
+               printf("+#+  +:+  +#+ +#++:++#   +#+    +:+\n");
+               printf("+#+       +#+ +#+        +#+    +#+\n");
+               printf("#+#       #+# #+#        #+#    #+#\n");
+               printf("###       ### ##########  ########\n\n\n");
+               printf(" ::::::::  :::    ::: :::::::::   ::::::::  ::::::::::  ::::::::  ::::::::::: ::::::::::\n");
+               printf(":+:    :+: :+:    :+: :+:    :+: :+:    :+: :+:        :+:    :+:     :+:     :+:\n");
+               printf("+:+        +:+    +:+ +:+    +:+ +:+    +:+ +:+        +:+            +:+     +:+\n");
+               printf("+#++:++#++ +#+    +:+ +#+    +:+ +#+    +:+ +#++:++#   +#++:++#++     +#+     +#++:++#\n");
+               printf("       +#+ +#+    +#+ +#+    +#+ +#+    +#+ +#+               +#+     +#+     +#+\n");
+               printf("#+#    #+# #+#    #+# #+#    #+# #+#    #+# #+#        #+#    #+#     #+#     #+#\n");
+               printf(" ########   ########  #########   ########  ##########  ########      ###     ##########\n\n\n");
+
+
+
+                system("pause");
                 system("cls");
                 printf("Meo Sudoeste 2020\n\n");
                 printf("O MEO Sudoeste começou em 1997 e tornou-se um dos mais importantes\n");
@@ -456,6 +511,15 @@ int main()
                 printf("de artistas de renome de vários estilos musicais que vão desde\n");
                 printf("o Reggae ao Rock, passando pela música electrónica, ou mesmo pelo Fado.\n\n");
                 printf("localização: Zambujeira do Mar \n");
+                printf("|----------------|   |----------------|   |----------------| \n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----- Meo ------|   |--- Sudoeste ---|   |----- 2020 -----|\n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n\n\n");
+
+
+
                 system("pause");
                 system("cls");
                 printf("pretende adquirir bilhete?\n\n");
@@ -531,8 +595,24 @@ int main()
                     printf("Até a proxima\n");break;
                 }
 
-        case 5: printf("Nos Alive\n");
-                Sleep(1500);
+        case 5: printf("::::    :::  ::::::::   ::::::::\n");
+                printf(":+:+:   :+: :+:    :+: :+:    :+:\n");
+                printf(":+:+:+  +:+ +:+    +:+ +:+\n");
+                printf("+#+ +:+ +#+ +#+    +:+ +#++:++#++\n");
+                printf("+#+  +#+#+# +#+    +#+        +#+\n");
+                printf("#+#   #+#+# #+#    #+# #+#    #+#\n");
+                printf("###    ####  ########   ########\n\n\n");
+                printf("    :::     :::        ::::::::::: :::     ::: ::::::::::\n");
+                printf("  :+: :+:   :+:            :+:     :+:     :+: :+:\n");
+                printf(" +:+   +:+  +:+            +:+     +:+     +:+ +:+\n");
+                printf("+#++:++#++: +#+            +#+     +#+     +:+ +#++:++#\n");
+                printf("+#+     +#+ +#+            +#+      +#+   +#+  +#+\n");
+                printf("#+#     #+# #+#            #+#       #+#+#+#   #+#\n");
+                printf("###     ### ########## ###########     ###     ##########\n\n\n");
+
+
+
+                system("pause");
                 system("cls");
                 printf("Nos Alive 2020\n\n");
                 printf("NOS Alive é um festival de música anualrealizado no Passeio Maritimo\n");
@@ -540,6 +620,15 @@ int main()
                 printf("e encontra-se entre os mais reconhecidos do país.\n");
                 printf("A primeira edição deste festival foi realizado em Junho de 2007.\n\n");
                 printf("localização: Oeiras\n");
+                printf("|----------------|   |----------------|   |----------------| \n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----- Nos ------|   |----- Alive ----|   |----- 2020 -----|\n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n\n\n");
+
+
+
                 system("pause");
                 system("cls");
                 printf("pretende adquirir bilhete?\n");
@@ -613,8 +702,31 @@ int main()
                     printf("Até a proxima\n");break;
                 }
 
-        case 6: printf("Rock In Rio\n");
-                Sleep(1500);
+        case 6: printf(":::::::::   ::::::::   ::::::::  :::    :::\n");
+                printf(":+:    :+: :+:    :+: :+:    :+: :+:   :+:\n");
+                printf("+:+    +:+ +:+    +:+ +:+        +:+  +:+\n");
+                printf("+#++:++#:  +#+    +:+ +#+        +#++:++\n");
+                printf("+#+    +#+ +#+    +#+ +#+        +#+  +#+\n");
+                printf("#+#    #+# #+#    #+# #+#    #+# #+#   #+#\n");
+                printf("###    ###  ########   ########  ###    ###\n\n\n");
+                printf("::::::::::: ::::    :::\n");
+                printf("    :+:     :+:+:   :+:\n");
+                printf("    +:+     :+:+:+  +:+\n");
+                printf("    +#+     +#+ +:+ +#+\n");
+                printf("    +#+     +#+  +#+#+#\n");
+                printf("    #+#     #+#   #+#+#\n");
+                printf("########### ###    ####\n\n\n");
+                printf(":::::::::  :::::::::::  ::::::::\n");
+                printf(":+:    :+:     :+:     :+:    :+:\n");
+                printf("+:+    +:+     +:+     +:+    +:+\n");
+                printf("+#++:++#:      +#+     +#+    +:+\n");
+                printf("+#+    +#+     +#+     +#+    +#+\n");
+                printf("#+#    #+#     #+#     #+#    #+#\n");
+                printf("###    ### ###########  ########\n\n\n");
+
+
+
+                system("pause");
                 system("cls");
                 printf("Rock In Rio 2020\n\n");
                 printf("O Rock in Rio é um festival de música realizado pela primeira vez em 1985\n");
@@ -622,6 +734,15 @@ int main()
                 printf("Foi originalmente organizado no Rio de Janeiro ma shoje em dia ja teve \n");
                 printf("20 edições, oito no Brasil, oito em Portugal, três na Espanha e uma nos Estados Unidos.\n\n");
                 printf("localização: Lisboa, Parque da Bela Vista\n");
+                printf("|----------------|   |----------------|   |----------------| \n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----- Rock -----|   |------ In ------|   |------ Rio -----|\n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n\n\n");
+
+
+
                 system("pause");
                 system("cls");
                 printf("pretende adquirir bilhete?\n\n");
@@ -695,8 +816,24 @@ int main()
                     printf("Até a proxima\n");break;
                 }
 
-        case 7: printf("Rolling Loud\n");
-                Sleep(1500);
+        case 7: printf(":::::::::   ::::::::  :::        :::        ::::::::::: ::::    :::  ::::::::\n");
+                printf(":+:    :+: :+:    :+: :+:        :+:            :+:     :+:+:   :+: :+:    :+:\n");
+                printf("+:+    +:+ +:+    +:+ +:+        +:+            +:+     :+:+:+  +:+ +:+\n");
+                printf("+#++:++#:  +#+    +:+ +#+        +#+            +#+     +#+ +:+ +#+ :#:\n");
+                printf("+#+    +#+ +#+    +#+ +#+        +#+            +#+     +#+  +#+#+# +#+   +#+#\n");
+                printf("#+#    #+# #+#    #+# #+#        #+#            #+#     #+#   #+#+# #+#    #+#\n");
+                printf("###    ###  ########  ########## ########## ########### ###    ####  ########\n\n\n");
+                printf(":::         ::::::::  :::    ::: :::::::::\n");
+                printf(":+:        :+:    :+: :+:    :+: :+:    :+:\n");
+                printf("+:+        +:+    +:+ +:+    +:+ +:+    +:+\n");
+                printf("+#+        +#+    +:+ +#+    +:+ +#+    +:+\n");
+                printf("+#+        +#+    +#+ +#+    +#+ +#+    +#+\n");
+                printf("#+#        #+#    #+# #+#    #+# #+#    #+#\n");
+                printf("##########  ########   ########  #########\n\n\n");
+
+
+
+                system("pause");
                 system("cls");
                 printf("Rolling Loud 2020\n\n");
                 printf("O Rolling Loud Festival é um evento de música de 3 dias que começou em Miami\n");
@@ -704,6 +841,15 @@ int main()
                 printf("Este festival para alem de ter planos de se expandir internacionalmente para o Japão e\n");
                 printf("China este ano chegou a Europa mais especificamente a Portugal.\n\n");
                 printf("localização: Portimão\n");
+                printf("|----------------|   |----------------|   |----------------| \n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|--- Rolling ----|   |----- Loud -----|   |----- 2020 -----|\n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n\n\n");
+
+
+
                 system("pause");
                 system("cls");
                 printf("pretende adquirir bilhete?\n\n");
@@ -778,14 +924,46 @@ int main()
                 }
 
 
-        case 8: printf("Summol Summer Fest\n");
-                Sleep(1500);
+        case 8: printf(" ::::::::  :::    ::: ::::    ::::  ::::    ::::   ::::::::  :::\n");
+                printf(":+:    :+: :+:    :+: +:+:+: :+:+:+ +:+:+: :+:+:+ :+:    :+: :+:\n");
+                printf("+:+        +:+    +:+ +:+ +:+:+ +:+ +:+ +:+:+ +:+ +:+    +:+ +:+\n");
+                printf("+#++:++#++ +#+    +:+ +#+  +:+  +#+ +#+  +:+  +#+ +#+    +:+ +#+\n");
+                printf("       +#+ +#+    +#+ +#+       +#+ +#+       +#+ +#+    +#+ +#+\n");
+                printf("#+#    #+# #+#    #+# #+#       #+# #+#       #+# #+#    #+# #+#\n");
+                printf(" ########   ########  ###       ### ###       ###  ########  ##########\n\n\n");
+                printf(" ::::::::  :::    ::: ::::    ::::  ::::    ::::  :::::::::: :::::::::\n");
+                printf(":+:    :+: :+:    :+: +:+:+: :+:+:+ +:+:+: :+:+:+ :+:        :+:    :+:\n");
+                printf("+:+        +:+    +:+ +:+ +:+:+ +:+ +:+ +:+:+ +:+ +:+        +:+    +:+\n");
+                printf("+#++:++#++ +#+    +:+ +#+  +:+  +#+ +#+  +:+  +#+ +#++:++#   +#++:++#:\n");
+                printf("       +#+ +#+    +#+ +#+       +#+ +#+       +#+ +#+        +#+    +#+\n");
+                printf("#+#    #+# #+#    #+# #+#       #+# #+#       #+# #+#        #+#    #+#\n");
+                printf(" ########   ########  ###       ### ###       ### ########## ###    ###\n\n\n");
+                printf(":::::::::: ::::::::::  ::::::::  :::::::::::\n");
+                printf(":+:        :+:        :+:    :+:     :+:\n");
+                printf("+:+        +:+        +:+            +:+\n");
+                printf(":#::+::#   +#++:++#   +#++:++#++     +#+\n");
+                printf("+#+        +#+               +#+     +#+\n");
+                printf("+#+        +#+               +#+     +#+\n");
+                printf("###        ##########  ########      ###\n\n\n");
+
+
+
+                system("pause");
                 system("cls");
                 printf("Summol Summer Fest 2020\n\n");
                 printf("O Sumol Summer Fest nasceu em 2009 e é um festival de Hip-Hop Portugues\n");
                 printf("Este festival é sempre sinónimo de celebração\n");
                 printf("com a  praia, o calor, os amigos e de muita música.\n\n");
                 printf("localização: Ericeira\n");
+                printf("|----------------|   |----------------|   |----------------| \n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|---- Summol ----|   |---- Summer  ---|   |----- Fest -----|\n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n\n\n");
+
+
+
                 system("pause");
                 system("cls");
                 printf("pretende adquirir bilhete?\n");
@@ -858,14 +1036,54 @@ int main()
                     printf("Até a proxima\n");break;
                 }
 
-        case 9: printf("Super Bock Super Rock\n");
-                Sleep(1500);
+        case 9: printf(" ::::::::  :::    ::: :::::::::  :::::::::: :::::::::\n");
+                printf(":+:    :+: :+:    :+: :+:    :+: :+:        :+:    :+:\n");
+                printf("+:+        +:+    +:+ +:+    +:+ +:+        +:+    +:+\n");
+                printf("+#++:++#++ +#+    +:+ +#++:++#+  +#++:++#   +#++:++#:\n");
+                printf("       +#+ +#+    +#+ +#+        +#+        +#+    +#+\n");
+                printf("#+#    #+# #+#    #+# #+#        #+#        #+#    #+#\n");
+                printf(" ########   ########  ###        ########## ###    ### \n\n\n");
+                printf(":::::::::   ::::::::   ::::::::  :::    :::\n");
+                printf(":+:    :+: :+:    :+: :+:    :+: :+:   :+:\n");
+                printf("+:+    +:+ +:+    +:+ +:+        +:+  +:+\n");
+                printf("+#++:++#+  +#+    +:+ +#+        +#++:++\n");
+                printf("+#+    +#+ +#+    +#+ +#+        +#+  +#+\n");
+                printf("#+#    #+# #+#    #+# #+#    #+# #+#   #+#\n");
+                printf("#########   ########   ########  ###    ###\n\n\n");
+                printf(" ::::::::  :::    ::: :::::::::  :::::::::: :::::::::\n");
+                printf(":+:    :+: :+:    :+: :+:    :+: :+:        :+:    :+:\n");
+                printf("+:+        +:+    +:+ +:+    +:+ +:+        +:+    +:+\n");
+                printf("+#++:++#++ +#+    +:+ +#++:++#+  +#++:++#   +#++:++#:\n");
+                printf("       +#+ +#+    +#+ +#+        +#+        +#+    +#+\n");
+                printf("#+#    #+# #+#    #+# #+#        #+#        #+#    #+#\n");
+                printf(" ########   ########  ###        ########## ###    ###\n\n\n");
+                printf(":::::::::   ::::::::   ::::::::  :::    :::\n");
+                printf(":+:    :+: :+:    :+: :+:    :+: :+:   :+:\n");
+                printf("+:+    +:+ +:+    +:+ +:+        +:+  +:+\n");
+                printf("+#++:++#:  +#+    +:+ +#+        +#++:++\n");
+                printf("+#+    +#+ +#+    +#+ +#+        +#+  +#+\n");
+                printf("#+#    #+# #+#    #+# #+#    #+# #+#   #+#\n");
+                printf("###    ###  ########   ########  ###    ###\n\n\n");
+
+
+
+
+                system("pause");
                 system("cls");
                 printf("Super Bock Super Rock 2020\n\n");
                 printf("O Super Bock Super Rock é um festival de música de Verão\n");
                 printf("realizado anualmente em Portugal. É organizado desde 1995 e é\n");
                 printf("actualmente, um dos mais importantes festivais portugueses.\n\n");
                 printf("localização: Meco\n");
+                printf("|----------------|   |----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|   |----------------|\n");
+                printf("|---- Super -----|   |----- Bock  ----|   |----- Super ----|   |----- Rock -----|\n");
+                printf("|----------------|   |----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|   |----------------|\n\n\n");
+
+
+
                 system("pause");
                 system("cls");
                 printf("pretende adquirir bilhete?\n\n");
@@ -939,14 +1157,46 @@ int main()
                     printf("Até a proxima\n");break;
                 }
 
-       case 10: printf("Nos Primavera Sound\n");
-                Sleep(1500);
+       case 10: printf("::::    :::  ::::::::   ::::::::\n");
+                printf(":+:+:   :+: :+:    :+: :+:    :+:\n");
+                printf(":+:+:+  +:+ +:+    +:+ +:+\n");
+                printf("+#+ +:+ +#+ +#+    +:+ +#++:++#++\n");
+                printf("+#+  +#+#+# +#+    +#+        +#+\n");
+                printf("#+#   #+#+# #+#    #+# #+#    #+#\n");
+                printf("###    ####  ########   ########\n\n\n");
+                printf(":::::::::  :::::::::  ::::::::::: ::::    ::::      :::     :::     ::: :::::::::: :::::::::      :::\n");
+                printf(":+:    :+: :+:    :+:     :+:     +:+:+: :+:+:+   :+: :+:   :+:     :+: :+:        :+:    :+:   :+: :+:\n");
+                printf("+:+    +:+ +:+    +:+     +:+     +:+ +:+:+ +:+  +:+   +:+  +:+     +:+ +:+        +:+    +:+  +:+   +:+\n");
+                printf("+#++:++#+  +#++:++#:      +#+     +#+  +:+  +#+ +#++:++#++: +#+     +:+ +#++:++#   +#++:++#:  +#++:++#++:\n");
+                printf("+#+        +#+    +#+     +#+     +#+       +#+ +#+     +#+  +#+   +#+  +#+        +#+    +#+ +#+     +#+\n");
+                printf("#+#        #+#    #+#     #+#     #+#       #+# #+#     #+#   #+#+#+#   #+#        #+#    #+# #+#     #+#\n");
+                printf("###        ###    ### ########### ###       ### ###     ###     ###     ########## ###    ### ###     ###\n\n\n");
+                printf(" ::::::::   ::::::::  :::    ::: ::::    ::: :::::::::\n");
+                printf(":+:    :+: :+:    :+: :+:    :+: :+:+:   :+: :+:    :+:\n");
+                printf("+:+        +:+    +:+ +:+    +:+ :+:+:+  +:+ +:+    +:+\n");
+                printf("+#++:++#++ +#+    +:+ +#+    +:+ +#+ +:+ +#+ +#+    +:+\n");
+                printf("       +#+ +#+    +#+ +#+    +#+ +#+  +#+#+# +#+    +#+\n");
+                printf("#+#    #+# #+#    #+# #+#    #+# #+#   #+#+# #+#    #+#\n");
+                printf(" ########   ########   ########  ###    #### #########\n\n\n");
+
+
+
+                system("pause");
                 system("cls");
                 printf("Nos Primavera Sound 2020\n\n");
                 printf("A primeira edição do festival em 2012 foi um verdadeiro sucesso\n");
                 printf("e a partir dai o Nos Primavera Sound continuou a crescer \n");
                 printf("destancando-se por investir em novos artistas e bandas.\n \n");
                 printf("localização: Porto\n");
+                printf("|----------------|   |----------------|   |----------------| \n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----- Nos ------|   |-- Primavera  --|   |----- Sound ----|\n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n");
+                printf("|----------------|   |----------------|   |----------------|\n\n\n");
+
+
+
                 system("pause");
                 system("cls");
                 printf("pretende adquirir bilhete?\n\n");
@@ -1025,6 +1275,7 @@ int main()
 
     }
     }
+
 
 
 
