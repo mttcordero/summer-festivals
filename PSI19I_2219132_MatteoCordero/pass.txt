@@ -1,0 +1,28 @@
+int main()
+{
+   char username[15];
+   char password[12];
+
+   printf("digite nome\n");
+   gets(username);
+
+   printf("digite pass\n");
+   scanf("%s",&password);
+
+   if(strcmp(username,"admin")==0)
+   {
+       if(strcmp(password,"123")==0)
+          {
+            printf("password correta\n");
+          }
+            else{
+
+                printf("password errada\n");
+            }
+   }
+   else
+   {
+       printf("nome sem registro\n");
+   }
+
+}
