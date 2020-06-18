@@ -5,9 +5,6 @@
 #include <locale.h>
 
 // admin mode
-// acampar
-// mudar o max de dias dos festivais
-
 
 
 struct bilhete
@@ -21,7 +18,7 @@ int main()
 {
     struct bilhete p;
     setlocale(LC_ALL, "Portuguese");
-    int c,d,e,f;
+    int c,d,e;
     FILE*ficheiro;
     ficheiro=fopen("bilhete.txt","a+");
 
@@ -143,7 +140,7 @@ int main()
     printf("9-Super Bock Super Rock\n");
     printf("10-Nos Primavera Sound\n");
 
-    printf("Digite o numero de um dos festivais\n\n");
+    printf("\nDigite o numero de um dos festivais\n\n");
     scanf("%i",&p.a);
     fflush(stdin);
     system("cls");
@@ -156,8 +153,6 @@ int main()
     scanf("%i",&d);
     fflush(stdin);
     system("cls");
-    system("cls");
-
 
 
     switch(p.a)
@@ -234,7 +229,7 @@ int main()
                             festboom[3]=festboom[1]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|---- Avante ----|\n");
+                            printf("|----- Boom -----|\n");
                             printf("|--- Festival ---|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
@@ -250,7 +245,7 @@ int main()
                             festboom[4]=festboom[0]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|---- Avante ----|\n");
+                            printf("|----- Boom -----|\n");
                             printf("|--- Festival ---|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
@@ -266,7 +261,7 @@ int main()
                             festboom[5]=festboom[2]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|---- Avante ----|\n");
+                            printf("|----- Boom -----|\n");
                             printf("|--- Festival ---|\n");
                             printf("|----- < 18 -----|\n");
                             printf("|----------------|\n\n\n");
@@ -334,7 +329,7 @@ int main()
                 if(p.b==1)
 
                 {
-                    printf("bilhete para quantos dias? max.8\n\n");
+                    printf("bilhete para quantos dias? max.3\n\n");
                     scanf("%i",&c);
                     fflush(stdin);
                     system("cls");
@@ -448,7 +443,7 @@ int main()
 
                 {
 
-                    printf("bilhete para quantos dias? max.8\n");
+                    printf("bilhete para quantos dias? max.5\n");
                     scanf("%i",&c);
                     fflush(stdin);
                     system("cls");
@@ -583,7 +578,7 @@ int main()
 
                 {
 
-                    printf("bilhete para quantos dias? max.8\n\n");
+                    printf("bilhete para quantos dias? max.5\n\n");
                     scanf("%i",&c);
                     fflush(stdin);
                     system("cls");
@@ -598,8 +593,8 @@ int main()
                             sudoeste[3]=sudoeste[1]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|---- Crato -----|\n");
-                            printf("|--- Festival ---|\n");
+                            printf("|----- Meo ------|\n");
+                            printf("|--- Sudoeste ---|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
                             printf("Bilhete para %s\n",p.nome);
@@ -612,8 +607,8 @@ int main()
                             sudoeste[4]=sudoeste[0]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|---- Crato -----|\n");
-                            printf("|--- Festival ---|\n");
+                            printf("|----- Meo ------|\n");
+                            printf("|--- Sudoeste ---|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
                             printf("Bilhete para %s\n",p.nome);
@@ -628,8 +623,8 @@ int main()
                             sudoeste[5]=sudoeste[2]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|---- Crato -----|\n");
-                            printf("|--- Festival ---|\n");
+                            printf("|----- Meo ------|\n");
+                            printf("|--- Sudoeste ---|\n");
                             printf("|----- < 18 -----|\n");
                             printf("|----------------|\n\n\n");
                             printf("Bilhete para %s\n",p.nome);
@@ -697,7 +692,7 @@ int main()
                 system("cls");
                 if(p.b==1)
                 {
-                    printf("bilhete para quantos dias? max.8\n\n");
+                    printf("bilhete para quantos dias? max.4\n\n");
                     scanf("%i",&c);
                     fflush(stdin);
                     system("cls");
@@ -712,7 +707,7 @@ int main()
                             nosalive[3]=nosalive[1]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Nos Alive --|\n");
                             printf("|--- Festival ---|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
@@ -726,7 +721,7 @@ int main()
                             nosalive[4]=nosalive[0]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Nos Alive --|\n");
                             printf("|--- Festival ---|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
@@ -742,7 +737,7 @@ int main()
                             nosalive[5]=nosalive[2]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
+                            printf("|--- Nos Alive --|\n");
                             printf("|--- Festival ---|\n");
                             printf("|----- < 18 -----|\n");
                             printf("|----------------|\n\n\n");
@@ -819,7 +814,7 @@ int main()
                 system("cls");
                 if(p.b==1)
                 {
-                    printf("bilhete para quantos dias? max.8\n\n");
+                    printf("bilhete para quantos dias? max.4\n\n");
                     scanf("%i",&c);
                     fflush(stdin);
                     system("cls");
@@ -834,7 +829,7 @@ int main()
                             rockinrio[3]=rockinrio[1]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
+                            printf("|-- Rock In Rio -|\n");
                             printf("|--- Festival ---|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
@@ -848,7 +843,7 @@ int main()
                             rockinrio[4]=rockinrio[0]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
+                            printf("|-- Rock In Rio -|\n");
                             printf("|--- Festival ---|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
@@ -864,7 +859,7 @@ int main()
                             rockinrio[5]=rockinrio[2]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
+                            printf("|-- Rock In Rio -|\n");
                             printf("|--- Festival ---|\n");
                             printf("|----- < 18 -----|\n");
                             printf("|----------------|\n\n\n");
@@ -939,7 +934,7 @@ int main()
                 system("cls");
                 if(p.b==1)
                 {
-                    printf("bilhete para quantos dias? max.8\n\n");
+                    printf("bilhete para quantos dias? max.3\n\n");
                     scanf("%i",&c);
                     fflush(stdin);
                     system("cls");
@@ -953,9 +948,9 @@ int main()
                         {
                             rollingloud[3]=rollingloud[1]*c;
                             printf("|----------------|\n");
-                            printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
-                            printf("|--- Festival ---|\n");
+                            printf("|---- BILHETE ---|\n");
+                            printf("|---- Rolling ---|\n");
+                            printf("|----- Loud -----|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
                             printf("Bilhete para %s\n",p.nome);
@@ -967,9 +962,9 @@ int main()
                         {
                             rollingloud[4]=rollingloud[0]*c;
                             printf("|----------------|\n");
-                            printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
-                            printf("|--- Festival ---|\n");
+                            printf("|---- BILHETE ---|\n");
+                            printf("|---- Rolling ---|\n");
+                            printf("|----- Loud -----|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
                             printf("Bilhete para %s\n",p.nome);
@@ -983,9 +978,9 @@ int main()
                      {
                             rollingloud[5]=rollingloud[2]*c;
                             printf("|----------------|\n");
-                            printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
-                            printf("|--- Festival ---|\n");
+                            printf("|---- BILHETE ---|\n");
+                            printf("|---- Rolling ---|\n");
+                            printf("|----- Loud -----|\n");
                             printf("|----- < 18 -----|\n");
                             printf("|----------------|\n\n\n");
                             printf("Bilhete para %s\n",p.nome);
@@ -1059,7 +1054,7 @@ int main()
                 system("cls");
                 if(p.b==1)
                 {
-                    printf("bilhete para quantos dias? max.8\n\n");
+                    printf("bilhete para quantos dias? max.2\n\n");
                     scanf("%i",&c);
                     fflush(stdin);
                     system("cls");
@@ -1073,8 +1068,8 @@ int main()
                         {
                             sumol[3]=sumol[1]*c;
                             printf("|----------------|\n");
-                            printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
+                            printf("|---- BILHETE ---|\n");
+                            printf("|----- Sumol ----|\n");
                             printf("|--- Festival ---|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
@@ -1087,8 +1082,8 @@ int main()
                         {
                             sumol[4]=sumol[0]*c;
                             printf("|----------------|\n");
-                            printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
+                           printf("|---- BILHETE ---|\n");
+                            printf("|----- Sumol ----|\n");
                             printf("|--- Festival ---|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
@@ -1103,8 +1098,8 @@ int main()
                      {
                             sumol[5]=sumol[2]*c;
                             printf("|----------------|\n");
-                            printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
+                            printf("|---- BILHETE ---|\n");
+                            printf("|----- Sumol ----|\n");
                             printf("|--- Festival ---|\n");
                             printf("|----- < 18 -----|\n");
                             printf("|----------------|\n\n\n");
@@ -1188,7 +1183,7 @@ int main()
                 system("cls");
                 if(p.b==1)
                 {
-                    printf("bilhete para quantos dias? max.8\n\n");
+                    printf("bilhete para quantos dias? max.3\n\n");
                     scanf("%i",&c);
                     fflush(stdin);
                     system("cls");
@@ -1203,8 +1198,8 @@ int main()
                             superbock[3]=superbock[1]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
-                            printf("|--- Festival ---|\n");
+                            printf("|-- Super Bock --|\n");
+                            printf("|-- Super Rock --|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
                             printf("Bilhete para %s\n",p.nome);
@@ -1217,8 +1212,8 @@ int main()
                             superbock[4]=superbock[0]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
-                            printf("|--- Festival ---|\n");
+                            printf("|-- Super Bock --|\n");
+                            printf("|-- Super Rock --|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
                             printf("Bilhete para %s\n",p.nome);
@@ -1233,8 +1228,8 @@ int main()
                             superbock[5]=superbock[2]*c;
                             printf("|----------------|\n");
                             printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
-                            printf("|--- Festival ---|\n");
+                            printf("|-- Super Bock --|\n");
+                            printf("|-- Super Rock --|\n");
                             printf("|----- < 18 -----|\n");
                             printf("|----------------|\n\n\n");
                             printf("Bilhete para %s\n",p.nome);
@@ -1309,7 +1304,7 @@ int main()
                 system("cls");
                 if(p.b==1)
                 {
-                    printf("bilhete para quantos dias? max.8\n\n");
+                    printf("bilhete para quantos dias? max.3\n\n");
                     scanf("%i",&c);
                     fflush(stdin);
                     system("cls");
@@ -1323,9 +1318,9 @@ int main()
                         {
                             primaverasound[3]=primaverasound[1]*c;
                             printf("|----------------|\n");
-                            printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
-                            printf("|--- Festival ---|\n");
+                            printf("|---- BILHETE ---|\n");
+                            printf("|--- Primavera --|\n");
+                            printf("|---- Sound -----|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
                             printf("Bilhete para %s\n",p.nome);
@@ -1337,9 +1332,9 @@ int main()
                         {
                             primaverasound[4]=primaverasound[0]*c;
                             printf("|----------------|\n");
-                            printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
-                            printf("|--- Festival ---|\n");
+                            printf("|---- BILHETE ---|\n");
+                            printf("|--- Primavera --|\n");
+                            printf("|---- Sound -----|\n");
                             printf("|----- 2020 -----|\n");
                             printf("|----------------|\n\n\n");
                             printf("Bilhete para %s\n",p.nome);
@@ -1353,9 +1348,9 @@ int main()
                      {
                             primaverasound[5]=primaverasound[2]*c;
                             printf("|----------------|\n");
-                            printf("|--- BILHETE ----|\n");
-                            printf("|-- Nos Alive ---|\n");
-                            printf("|--- Festival ---|\n");
+                            printf("|---- BILHETE ---|\n");
+                            printf("|--- Primavera --|\n");
+                            printf("|---- Sound -----|\n");
                             printf("|----- < 18 -----|\n");
                             printf("|----------------|\n\n\n");
                             printf("Bilhete para %s\n",p.nome);
@@ -1368,6 +1363,8 @@ int main()
                 {
                     printf("Até a proxima\n");break;
                 }
+                default:  printf("360º\n");
+
 
 
     }
