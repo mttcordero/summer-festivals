@@ -4,8 +4,6 @@
 #include <conio.h>
 #include <locale.h>
 
-// admin mode
-
 
 struct bilhete
 {
@@ -13,19 +11,27 @@ struct bilhete
     int a,b;
 };
 
+struct user
+{
+   char username[15];
+   char password[12];
+   int c;
+};
 
 int main()
 {
+    system("COLOR f0");
     struct bilhete p;
+    struct user b;
     setlocale(LC_ALL, "Portuguese");
     int c,d,e;
     FILE*ficheiro;
     ficheiro=fopen("bilhete.txt","a+");
 
     int festboom[5];
-    festboom[0]=15;              // preço sem bebidas
-    festboom[1]=20;              // preço com bebidas
-    festboom[2]=12;              // preço reduzido < 18
+    festboom[0]=15;
+    festboom[1]=20;
+    festboom[2]=12;
     festboom[3]=festboom[1]*c;
     festboom[4]=festboom[0]*c;
     festboom[5]=festboom[2]*c;
@@ -123,11 +129,43 @@ int main()
     printf(" +#+   +#+  +#+        +#+    +#+ +#+     +#+ +#+    +#+\n");
     printf("  #+#+#+#   #+#        #+#    #+# #+#     #+# #+#    #+#\n");
     printf("    ###     ########## ###    ### ###     ###  ########\n\n\n");
-
-
-
     system("pause");
     system("cls");
+
+
+   printf("digite o nome de utilizador\n\n");
+   gets(b.username);
+
+   printf("\ndigite pass\n\n");
+   scanf("%s",&b.password);
+   if(strcmp(b.username,"admin")==0)
+   {
+       if(strcmp(b.password,"123")==0)
+          {
+            system("cls");
+            printf("\npassword correta\n\n");
+            system("COLOR f2");
+
+          }
+            else{
+                system("cls");
+                printf("\npassword errada\n\n");
+                system("COLOR f4");
+                return 0;
+            }
+   }
+   else
+   {
+       system("cls");
+       printf("\nnome sem registro\n\n");
+       system("COLOR f4");
+       return 0;
+   }
+    system("pause");
+    system("cls");
+
+
+    system("COLOR f0");
     printf("Principais festivais deste verão\n\n");
     printf("1-Boom Festival\n");
     printf("2-Avante\n");
@@ -146,10 +184,10 @@ int main()
     system("cls");
 
     printf("Menu\n\n");
-    printf("Digite o seu nome\n\n");
+    printf("Digite o nome do cliente\n\n");
     gets(p.nome);
     fflush(stdin);
-    printf("\nDigite a sua idade\n\n");
+    printf("\nDigite a idade\n\n");
     scanf("%i",&d);
     fflush(stdin);
     system("cls");
